@@ -52,6 +52,7 @@
   --radius-sm: 14px;
   --radius-md: 22px;
   --radius-lg: 32px;
+  --radius-xl: 40px;
   --radius-full: 9999px;
 
   /* Easing */
@@ -209,6 +210,8 @@ a:hover {
 
 .section-subtitle {
   display: inline-block;
+  width: fit-content;
+  align-self: flex-start;
   font-size: 0.8rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -225,6 +228,10 @@ a:hover {
   color: var(--color-terracotta);
   background: rgba(232, 90, 34, 0.1);
   border-color: rgba(232, 90, 34, 0.25);
+}
+
+.section-header .section-subtitle {
+  align-self: center;
 }
 
 .section-title {
@@ -1135,6 +1142,7 @@ a:hover {
   box-shadow: var(--shadow-sm);
   transition: var(--transition-normal);
   height: 100%;
+  margin-top: 15px;
 }
 
 .doc-card:hover {
@@ -1333,12 +1341,21 @@ a:hover {
   min-height: 140px;
 }
 
-/* Subpage Header Banner */
+/* Subpage Header Banner & Section Spacing */
+#domain,
+#milestones,
+#documents,
+#presentations,
+#about,
+#contact {
+  margin-top: 4.5rem;
+}
+
 .page-header {
   background: linear-gradient(135deg, var(--color-obsidian) 0%, var(--color-deep-emerald) 100%);
   color: var(--color-white);
   padding: 5rem 0 4.5rem 0;
-  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  border-radius: var(--radius-lg);
   margin-bottom: 4rem;
   box-shadow: var(--shadow-lg);
 }
