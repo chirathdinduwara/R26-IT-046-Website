@@ -1,0 +1,217 @@
+/* ==========================================================================
+   AI-DRIVEN CLIMATE-AWARE DECISION SUPPORT AND RISK FORECASTING SYSTEMS
+   Responsive Stylesheet (Large Desktop, Laptop, Tablet, Mobile)
+   ========================================================================== */
+
+/* Large Desktop (min-width: 1400px) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1340px;
+  }
+
+  .hero-headline {
+    font-size: 4.4rem;
+  }
+}
+
+/* Laptop / Medium Desktop (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .hero-editorial {
+    min-height: 75vh;
+  }
+
+  .components-asymmetric-grid {
+    gap: 2rem;
+  }
+
+  .split-editorial-grid {
+    gap: 2rem;
+  }
+}
+
+/* Tablet Breakpoint (max-width: 992px) */
+@media (max-width: 992px) {
+  .hero-editorial {
+    min-height: auto;
+    padding: 3rem 0;
+  }
+
+  .hero-content-container {
+    padding: 3rem 0;
+    max-width: 100%;
+  }
+
+  .hero-headline {
+    font-size: 2.8rem;
+  }
+
+  .scope-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .pipeline-stepper-container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .pipeline-connector-line {
+    display: none;
+  }
+
+  .components-asymmetric-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .component-card-featured {
+    grid-column: span 1;
+  }
+
+  .split-editorial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  /* CSS Mobile Drawer Navigation */
+  .nav-hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.2rem;
+    gap: 1.4rem;
+    box-shadow: 0 25px 50px rgba(4, 20, 14, 0.18);
+    border-bottom: 1px solid var(--color-border);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  #nav-toggle:checked ~ .nav-menu {
+    max-height: 550px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #nav-toggle:checked ~ .nav-hamburger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #nav-toggle:checked ~ .nav-hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #nav-toggle:checked ~ .nav-hamburger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 0.6rem 0;
+    font-size: 1.05rem;
+  }
+
+  .nav-btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Mobile Breakpoint (max-width: 640px) */
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 0;
+  }
+
+  .hero-editorial {
+    padding: 1.5rem 0;
+  }
+
+  .hero-tag {
+    font-size: 0.78rem;
+    padding: 0.45rem 1rem;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-headline {
+    font-size: 2rem;
+    line-height: 1.22;
+  }
+
+  .hero-subtext {
+    font-size: 1.02rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .editorial-scope-banner {
+    padding: 2.2rem 1.6rem;
+    border-radius: var(--radius-md);
+  }
+
+  .component-card-editorial, .editorial-split-card, .contact-info-card, .contact-form-card {
+    padding: 2.4rem 1.6rem;
+  }
+
+  .page-header {
+    padding: 3.8rem 0 3.2rem 0;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+  }
+
+  .risk-visual-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .risk-badge {
+    width: 100%;
+  }
+
+  .accordion-label {
+    padding: 1.5rem 1.6rem;
+    font-size: 1.08rem;
+  }
+
+  .accordion-content {
+    padding: 0 1.6rem;
+  }
+
+  .accordion-toggle:checked ~ .accordion-content {
+    padding: 1.5rem 1.6rem 2rem 1.6rem;
+  }
+}
